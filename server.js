@@ -28,8 +28,9 @@ app.use("/api/notes",NotesRouter);
 
 
 
-
-
+app.get("/", (re, resp) => {
+    resp.send("Deploy !!")
+})
 app.listen(PORT,()=>{
     console.log('Server is listening on port 5000');
 })
